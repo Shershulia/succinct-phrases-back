@@ -1,9 +1,9 @@
 from fastapi import FastAPI, WebSocket
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.db import init_db
-from app.logic import router  # если есть обычные REST маршруты
-from app.websockets import websocket_handler
+from db import init_db
+from logic import router  # если есть обычные REST маршруты
+from ws_handlers import websocket_handler
 
 app = FastAPI()
 

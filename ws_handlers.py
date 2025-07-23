@@ -2,8 +2,8 @@ from fastapi import WebSocket, WebSocketDisconnect
 from uuid import uuid4
 import random
 import asyncio
-from app.db import get_db
-from app.utils import now
+from db import get_db
+from utils import now
 import random
 
 clients = set()

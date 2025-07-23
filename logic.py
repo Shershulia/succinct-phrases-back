@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from app.db import get_db
-from app.utils import get_next_cycle_time
+from db import get_db
+from utils import get_next_cycle_time
 
 router = APIRouter()
 
